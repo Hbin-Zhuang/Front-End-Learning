@@ -1,0 +1,229 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #f2f4f7;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+  -webkit-tap-highlight-color: transparent;
+}
+
+// 约束：当屏幕大于750px时，html字体大小就不再变化
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+
+.wrap {
+  background-color: #fff;
+  padding-bottom: 1.146667rem;
+}
+
+.header {
+  height: 1.066667rem;
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 1.066667rem;
+  font-size: 0.933333rem;
+  color: #1c1c1c;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.2rem 0 1.6rem 0;
+
+  .item {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 3.706667rem;
+      height: 3.706667rem;
+    }
+
+    span {
+      font-size: 0.666667rem;
+      color: #707070;
+    }
+
+    //选择前面三个
+    &:nth-child(-n + 3) {
+      margin-bottom: 1.653333rem;
+    }
+  }
+}
+
+.go {
+  margin: 0 0.266667rem 0 0.48rem;
+}
+
+.content {
+  padding: 1.066667rem 0.64rem;
+  background-color: #fff;
+  margin-top: 0.266667rem;
+
+  .con-hd {
+    display: flex;
+    justify-content: space-between;
+    height: 1.013333rem;
+    line-height: 1.013333rem;
+    margin-bottom: 0.906667rem;
+
+    h4 {
+      margin: 0;
+      font-size: 0.746667rem;
+      color: #333;
+
+      .icon {
+        display: inline-block;
+        width: 1.013333rem;
+        height: 1.013333rem;
+        vertical-align: middle;
+      }
+    }
+
+    .more {
+      font-size: 0.586667rem;
+      color: #999;
+    }
+  }
+}
+
+.get_job_focus {
+  //子绝父相
+  position: relative;
+
+  .swiper-container {
+    // width: 100%;
+    // 根据需求把宽度改为540px
+    width: 14.4rem;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    // 竖向显示
+    flex-direction: column;
+    transition: 300ms;
+    // 其余的兄弟是0.8
+    transform: scale(0.8);
+    // 设置透明度为0.4
+    opacity: 0.4;
+
+    a {
+      width: 9.013333rem;
+      height: 10.026667rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    p {
+      width: 9.013333rem;
+      font-size: 0.666667rem;
+      margin-top: 0.64rem;
+      color: #333;
+    }
+  }
+
+  // 当前选中的 slide 中间那个
+  .swiper-slide-active,
+  .swiper-slide-duplicate-active {
+    transform: scale(1);
+    // 提高层级
+    z-index: 999;
+    // 当前选中的slide透明度为1
+    opacity: 1;
+  }
+}
+
+.study_con {
+  //绝对定位不占位置，所以padding-bottom要给30px+110px本身底部的高度!
+  padding-bottom: 3.733333rem;
+}
+
+//学习模块轮播图
+.study {
+  .study_fo {
+    padding: 0.266667rem;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    width: 7.733333rem;
+    height: 9.066667rem;
+    background-color: #fff;
+    border-radius: 0.266667rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+    h5 {
+      font-size: 0.72rem;
+      margin: 0.533333rem 0;
+      font-weight: 400;
+      padding: 0 0.266667rem;
+    }
+
+    p {
+      font-size: 0.693333rem;
+      padding: 0 0.266667rem;
+
+      span {
+        color: #ff4400;
+      }
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.933333rem;
+  z-index: 9999;
+  background-color: #fff;
+  display: flex;
+  padding: 0.533333rem;
+  border-top: 1px solid #ccc;
+
+  .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 1.04rem;
+      height: 1.093333rem;
+    }
+
+    p {
+      font-size: 0.586667rem;
+      color: #666;
+      margin-top: 0.266667rem;
+    }
+  }
+}

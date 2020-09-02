@@ -1,0 +1,111 @@
+// 首页的样式less文件
+@import "common";
+
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background: #f2f2f2;
+}
+
+// 顶部搜索框
+@baseFont: 50;
+
+.search-content {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 15rem;
+  height: 88rem / @baseFont;
+  transform: translate(-50%);
+  background-color: #ffc001;
+
+  .classify {
+    width: 44rem / @baseFont;
+    height: 70rem / @baseFont;
+    margin: 11rem / @baseFont 25rem / @baseFont 7rem / @baseFont 24rem / @baseFont;
+    background: url(../images/classify.png) no-repeat;
+    //背景缩放
+    background-size: 44rem / @baseFont 70rem / @baseFont;
+  }
+
+  .search {
+    flex: 1;
+
+    input {
+      width: 100%;
+      height: 66rem / @baseFont;
+      margin-top: 12rem / @baseFont;
+      border-radius: 33rem / @baseFont;
+      background-color: #fff2cc;
+      outline: none;
+      border: 0;
+      font-size: 25rem / @baseFont;
+      padding-left: 55rem / @baseFont;
+      color: #757575;
+
+    }
+  }
+
+  .login {
+    width: 75rem / @baseFont;
+    height: 70rem / @baseFont;
+    margin: 10rem / @baseFont;
+    font-size: 25rem / @baseFont;
+    text-align: center;
+    line-height: 70rem / @baseFont;
+    color: #fff;
+  }
+}
+
+//banner部分
+.banner {
+  width: 750rem / @baseFont;
+  height: 368rem / @baseFont;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//ad广告部分
+.ad {
+  display: flex;
+
+  a {
+    flex: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+//nav部分
+nav {
+  width: 750rem / @baseFont;
+
+  a {
+    float: left;
+    width: 150rem / @baseFont;
+    height: 140rem / @baseFont;
+    text-align: center;
+
+
+    img {
+      display: block;
+      width: 82rem / @baseFont;
+      height: 82rem / @baseFont;
+      margin: 10rem / @baseFont auto 0;
+    }
+
+    span {
+      font-size: 25rem / @baseFont;
+      color: #333;
+    }
+  }
+}

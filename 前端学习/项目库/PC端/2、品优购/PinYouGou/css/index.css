@@ -1,0 +1,324 @@
+/* 首页部分main开始制作 */
+.w .main {
+  width: 980px;
+  height: 455px;
+  margin: 10px 0;
+  margin-left: 220px;
+}
+
+/* 首页左边focus部分 */
+.w .main .focus {
+  position: relative;
+  float: left;
+  width: 721px;
+  height: 100%;
+}
+
+.w .main .focus a img {
+  width: 721px;
+  height: 454px;
+}
+
+.w .main .focus .left a h3,
+.w .main .focus .right a h3 {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  content: '';
+  width: 20px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-family: 'icomoon';
+  color: #fff;
+  background: rgba(0, 0, 0, .3);
+}
+
+.w .main .focus .left a h3 {
+  left: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.w .main .focus .right a h3 {
+  right: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.w .main .focus a ul {
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+}
+
+.w .main .focus a ul li {
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin: 0 3px;
+  border: 2px solid rgba(255, 255, 255, .3);
+  border-radius: 6px;
+}
+
+.w .main .focus a ul .selected {
+  background-color: #fff;
+}
+
+/* 首页右边newsflash部分 */
+.w .main .newsflash {
+  float: right;
+  width: 249px;
+  height: 373px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+
+/* newsflash上边news部分 */
+.w .main .newsflash .news {
+  width: 100%;
+  height: 163px;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.w .main .newsflash .news .news_hd {
+  position: relative;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.w .main .newsflash .news .news_hd h3 {
+  float: left;
+  padding-left: 16px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.w .main .newsflash .news .news_hd span {
+  float: left;
+  padding-left: 110px;
+}
+
+.w .main .newsflash .news .news_hd span::after {
+  content: '\e920';
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  font-family: 'icomoon';
+}
+
+.w .main .newsflash .news .news_bd {
+  height: 131px;
+  padding-left: 16px;
+}
+
+.w .main .newsflash .news .news_bd ul li {
+  height: 24px;
+  padding-top: 6px;
+}
+
+/* newsflash中间lifeservice部分 */
+.w .main .newsflash .lifeservice {
+  width: 249px;
+  height: 210px;
+}
+
+.w .main .newsflash .lifeservice ul li {
+  float: left;
+  width: 62px;
+  height: 70px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.w .main .newsflash .lifeservice ul li a h5 {
+  width: 42px;
+  height: 44px;
+  background: url(../images/icons.png) no-repeat;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(1) a h5 {
+  background-position: 2px -4px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(2) a h5 {
+  background-position: -61px -4px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(3) a h5 {
+  background-position: -124px -4px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(4) a h5 {
+  background-position: -188px -4px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(5) a h5 {
+  background-position: 2px -74px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(6) a h5 {
+  background-position: -61px -74px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(7) a h5 {
+  background-position: -124px -74px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(8) a h5 {
+  background-position: -188px -74px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(9) a h5 {
+  background-position: 2px -144px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(10) a h5 {
+  background-position: -61px -144px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(11) a h5 {
+  background-position: -124px -140px;
+}
+
+.w .main .newsflash .lifeservice ul li:nth-child(12) a h5 {
+  background-position: -188px -144px;
+}
+
+/* newsflash下面bargain部分 */
+.w .main .newsflash .bargain {
+  width: 249px;
+  height: 72px;
+}
+
+.w .main .newsflash .bargain a img {
+  width: 249px;
+  height: 72px;
+  margin-top: 8px;
+}
+
+/* 推荐模块制作 */
+.w .recommend {
+  height: 163px;
+  margin-top: 10px;
+}
+
+.w .recommend .recom_hd {
+  float: left;
+  width: 206px;
+  height: 100%;
+  line-height: 163px;
+  text-align: center;
+  background-color: #5c5251;
+}
+
+.w .recommend .recom_bd img {
+  float: left;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* 猜你喜欢模块 */
+.related {
+  height: 262px;
+  margin-top: 30px;
+}
+
+.related .related_hd {
+  height: 30px;
+}
+
+.related .related_hd h5 {
+  float: left;
+  /* padding-bottom: 10px; */
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+
+.related .related_hd span {
+  float: right;
+  padding: 5px 20px 10px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.related .related_hd span::after {
+  float: right;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: url(../images/icons.png) no-repeat -420px -110px;
+}
+
+.related .related_bd {
+  height: 232px;
+  border: 1px solid #ededed;
+}
+
+.related .related_bd ul li {
+  float: left;
+  width: 199px;
+  height: 160px;
+  text-align: center;
+}
+
+.related .related_bd ul li img {
+  padding-top: 16px;
+}
+
+.related .related_bd ul li:nth-child(4) img {
+  margin-top: 42px;
+}
+
+.related .related_bd>div {
+  float: left;
+  width: 199px;
+  height: 62px;
+  border-right: 1px solid #ededed;
+}
+
+.related .related_bd>div:last-child {
+  border: 0;
+}
+
+.related .related_bd>div p,
+.related .related_bd>div span {
+  padding-left: 40px;
+}
+
+.related .related_bd>div p {
+  font-size: 12px;
+  color: #666;
+}
+
+.related .related_bd>div span {
+  font-size: 18px;
+  color: #df3033;
+}
+
+/* 楼层区floor制作 */
+/* 第一楼家用电器模块 */
+.box_hd {
+  height: 28px;
+  margin-top: 40px;
+  border-bottom: 2px solid #c81623;
+}
+
+.box_hd h5 {
+  float: left;
+  height: 28px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #c81623;
+}
+
+.box_hd ul li {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 15px;
+}

@@ -1,0 +1,329 @@
+body {
+    min-width: 320px;
+    max-width: 540px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, 'Lucida Grande', Verdana, 'Microsoft YaHei', STXiHei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #222;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    /* 没有加margin和padding会让li产生空间不能顶着盒子对齐 */
+    list-style: none;
+}
+
+.search-index {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    height: 44px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.search {
+    position: relative;
+    flex: 1;
+    height: 26px;
+    line-height: 24px;
+    padding-left: 25px;
+    margin: 8px 10px;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/sprite.png) no-repeat -60px -280px;
+    background-size: 104px auto;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    color: #2eaae0;
+    text-align: center;
+}
+
+.user::before {
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin: 4px auto -3px;
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    background-size: 104px auto;
+}
+
+.focus img {
+    width: 100%;
+    margin: 44px auto 0;
+}
+
+.local-nav {
+    display: flex;
+    height: 64px;
+    margin: 3px 4px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.local-nav li {
+    flex: 1;
+}
+
+.local-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* 类名为行内元素.local-nav-icon-icon1的span单独设宽高无用 */
+
+.local-nav li [class^='local-nav-icon'] {
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+
+.local-nav li .local-nav-icon-icon2 {
+    background-position: 0 -32px;
+}
+
+.local-nav li .local-nav-icon-icon3 {
+    background-position: 0 -64px;
+}
+
+.local-nav li .local-nav-icon-icon4 {
+    background-position: 0 -96px;
+}
+
+.local-nav li .local-nav-icon-icon5 {
+    background-position: 0 -128px;
+}
+
+nav {
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 4px 3px;
+}
+
+.nav-common {
+    display: flex;
+    height: 88px;
+    background-color: pink;
+}
+
+.nav-common:nth-child(2) {
+    margin: 3px 0;
+}
+
+.nav-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 选出前面两个元素加一个右边框 */
+
+.nav-items:nth-child(-n + 2) {
+    border-right: 1px solid #fff;
+}
+
+.nav-items a:nth-child(1) {
+    border-bottom: 1px solid #fff;
+}
+
+.nav-items:nth-child(1) a {
+    border-bottom: 0;
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+
+.nav-items a {
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    /* 文字阴影 */
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-common:nth-child(1) {
+    background: -webkit-linear-gradient(left, #fa5a55, #fa964d);
+}
+
+.nav-common:nth-child(2) {
+    background: -webkit-linear-gradient(left, #4b90ed, #53bced);
+}
+
+.nav-common:nth-child(3) {
+    background: -webkit-linear-gradient(left, #34c2a9, #6cd559);
+}
+
+.subnav-entry {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 4px;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subnav-entry li {
+    /* 里面的子盒子可以写%，相对于父盒子来说的 */
+    flex: 20%;
+}
+
+.subnav-entry a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subnav-entry li [class^='subnav-entry-icon'] {
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+    background: url(../images/subnav-bg.png) no-repeat 0 0;
+    background-size: 24px auto;
+}
+
+
+/* 要写在.subnav-entry li里的.subnav-entry-icon2,直接写span的类名.subnav-entry-icon2无效,下面的同理 */
+
+.subnav-entry li .subnav-entry-icon-icon2 {
+    background-position: 0 -24px;
+}
+
+.subnav-entry li .subnav-entry-icon-icon3 {
+    background-position: 0 -52px;
+}
+
+.subnav-entry li .subnav-entry-icon-icon4 {
+    background-position: 0 -80px;
+}
+
+.subnav-entry li .subnav-entry-icon-icon5 {
+    background-position: 0 -108px;
+}
+
+.subnav-entry li .subnav-entry-icon-icon6 {
+    background-position: 0 -136px;
+}
+
+.subnav-entry li .subnav-entry-icon-icon7 {
+    background-position: 0 -164px;
+}
+
+.subnav-entry li .subnav-entry-icon-icon8 {
+    background-position: 0 -192px;
+}
+
+.subnav-entry li .subnav-entry-icon-icon9 {
+    background-position: 0 -220px;
+}
+
+.subnav-entry li .subnav-entry-icon-icon10 {
+    background-position: 0 -248px;
+}
+
+.sales-box {
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    margin: 4px;
+}
+
+.sales-hd {
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sales-hd h2 {
+    position: relative;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.sales-hd h2::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    width: 79px;
+    height: 15px;
+    background: url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 79px auto;
+}
+
+.more {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding: 3px 20px 3px 10px;
+    background: -webkit-linear-gradient(left, #ff506c, #ff6bc6);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.more::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.row {
+    display: flex;
+}
+
+.row a {
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+
+.row a:nth-child(1) {
+    border-right: 1px solid #eee;
+}
+
+.row a img {
+    width: 100%;
+}

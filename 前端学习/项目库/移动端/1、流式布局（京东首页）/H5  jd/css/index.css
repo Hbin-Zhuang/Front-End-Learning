@@ -1,0 +1,194 @@
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 640px;
+    background: #fff;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #666;
+    height: 2000px;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+header {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+header div {
+    float: left;
+    background-color: #333;
+}
+
+header div:nth-child(1) {
+    width: 8%;
+}
+
+header div:nth-child(1) img {
+    width: 10px;
+    height: 10px;
+}
+
+header div:nth-child(2) {
+    width: 10%;
+}
+
+header div:nth-child(2) img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+header div:nth-child(3) {
+    width: 57%;
+}
+
+header div:nth-child(4) {
+    width: 25%;
+    background-color: #F63515;
+}
+
+header div span {
+    font-size: 14px;
+    color: #fff;
+}
+
+.search-wrap {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    /* 注意需要同时设置width和min-width、max-width */
+    height: 44px;
+    min-width: 320px;
+    /*这样才能保证手机端和电脑端的兼容性 */
+    max-width: 640px;
+    /* 同时满足流失布局（百分比布局）又能兼容多端的自适应！！！ */
+}
+
+.search-wrap div {
+    float: left;
+}
+
+.search-btn {
+    position: relative;
+    width: 40px;
+    height: 44px;
+}
+
+.search-btn img {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 20px;
+    height: 18px;
+}
+
+.search {
+    position: relative;
+    width: calc(100% - 100px);
+    height: 30px;
+    margin: 7px 10px 0;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.jd-icon {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    width: 20px;
+    height: 15px;
+    line-height: 15px;
+    background: url(../images/jd.png) no-repeat;
+    background-size: 20px 15px;
+}
+
+.jd-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 28px;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+
+.sou {
+    position: absolute;
+    top: 8px;
+    left: 48px;
+    width: 16px;
+    height: 15px;
+    background: url(../images/sprites.png) no-repeat -83px 0;
+    background-size: 200px 200px;
+}
+
+.search-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+}
+
+.search-login a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.brand a img {
+    float: left;
+    width: 33.333%;
+}
+
+.nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.nav a img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    vertical-align: middle;
+}
+
+.nav a span {
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+
+.news a img {
+    float: left;
+}
+
+.news a:nth-child(1) img {
+    width: 50%;
+}
+
+.news a:nth-child(2) img {
+    width: 25%;
+}
+
+.news a:nth-child(3) img {
+    width: 25%;
+}
